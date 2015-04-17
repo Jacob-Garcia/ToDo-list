@@ -8,7 +8,7 @@ if ($mysqli->connect_error) {
 }
 // Displays this message if the Connection is successful
 else {
-	echo "Connection made";
+	// echo "Connection made";
 }
 $mysqli->close();
 
