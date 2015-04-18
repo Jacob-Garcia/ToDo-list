@@ -16,4 +16,21 @@
 	  </form>
 	  </div>
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+  // Calls the add task function
+	add_task();
+
+	function add_task() {
+		$('.add-new-task').submit(function() {
+			var new_task = $('.add-new-task input[name=new-task').val();
+
+			if (new_task != '') {
+				$.post('includes/add-task.php', { task: new_task}, function(data) {
+					
+				})
+			};
+		})
+	}
+</script>
 </html>
