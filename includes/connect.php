@@ -1,5 +1,5 @@
 <?php
-// localhost is first because it's choosing that as the connectin base
+// localhost is first because it's choosing that as the connection base
 $mysqli = new mysqli('localhost', 'root', 'root', 'todo');
 // If database connection fails, then we want it to die and display the error message
 if ($mysqli->connect_error) {
